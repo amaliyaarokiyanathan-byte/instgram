@@ -22,7 +22,9 @@ jobs:
         distribution: 'temurin'
 
     - name: Build with Maven
+      working-directory: Instagram
       run: mvn clean install
 
     - name: Run Tests
+      working-directory: Instagram
       run: mvn test
